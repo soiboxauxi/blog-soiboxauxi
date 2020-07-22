@@ -1,0 +1,3 @@
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.AssemblyInfoInputs.cache
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.AssemblyInfo.cs
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.csproj.CoreCompileInputs.cache

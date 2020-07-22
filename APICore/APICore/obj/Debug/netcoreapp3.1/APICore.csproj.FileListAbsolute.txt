@@ -27,3 +27,5 @@ E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\blog-soidev\APICore\APICore\obj\Debug\netcoreapp3.1\APICore.csproj.CoreCompileInputs.cache
+E:\blog-soidev\APICore\APICore\obj\Debug\netcoreapp3.1\APICore.MvcApplicationPartsAssemblyInfo.cache

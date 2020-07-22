@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using APICore.Infrastructure.CrossCutting.Indentity;
+using APICore.Infrastructure.CrossCutting.Indentity.MongoDb;
 using APICore.StartupExtensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -16,6 +18,8 @@ namespace APICore
 {
     public class Startup
     {
+        private string ConnectionString => Configuration.GetConnectionString("DefaultConnection");
+
         public Startup(IConfiguration configuration, IWebHostEnvironment environment)
         {
             Configuration = configuration;
@@ -28,7 +32,24 @@ namespace APICore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            // ----- Identity MongoDB -----
+            services.AddIdentityMongoDbProvider<ApplicationUser>(identity =>
+                {
+                    identity.Password.RequireDigit = false;
+                    identity.Password.RequireLowercase = false;
+                    identity.Password.RequireNonAlphanumeric = false;
+                    identity.Password.RequireUppercase = false;
+                    identity.Password.RequiredLength = 1;
+                    identity.Password.RequiredUniqueChars = 0;
+                },
+                mongo =>
+                {
+                    mongo.ConnectionString = ConnectionString;
+                }
+            );
+
+            // ----- Default -----
+            services.AddControllers();         
 
             // ----- Swagger Customs -----
             services.AddCustomizedSwagger(_env);

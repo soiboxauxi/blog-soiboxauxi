@@ -1,0 +1,15 @@
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csprojAssemblyReference.cache
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.AssemblyInfoInputs.cache
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.AssemblyInfo.cs
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj.CoreCompileInputs.cache
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.deps.json
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.dll
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csprojAssemblyReference.cache
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.AssemblyInfoInputs.cache
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.AssemblyInfo.cs
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj.CoreCompileInputs.cache
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.deps.json
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.dll
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.pdb
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.dll
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.pdb

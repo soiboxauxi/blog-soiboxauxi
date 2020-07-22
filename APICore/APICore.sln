@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Infrastructure", "A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Application", "APICore.ApplicationCore\APICore.Application.csproj", "{464F1721-4E30-438F-8575-5CFCDCA3B543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APICore.Domain", "APICore.Domain\APICore.Domain.csproj", "{E4D9F5B5-07DB-4C68-A976-5068F7CB1593}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Domain", "APICore.Domain\APICore.Domain.csproj", "{E4D9F5B5-07DB-4C68-A976-5068F7CB1593}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Infrastructure.CrossCutting.Indentity.MongoDb", "APICore.Infrastructure.CrossCutting.Indentity.MongoDb\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj", "{C7C6A25B-1B47-4FA2-912D-3D23980F1819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APICore.Infrastructure.CrossCutting.Indentity", "APICore.Infrastructure.CrossCutting.Indentity\APICore.Infrastructure.CrossCutting.Indentity.csproj", "{2E761049-DF9D-4302-A79F-79085AB5496E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{E4D9F5B5-07DB-4C68-A976-5068F7CB1593}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4D9F5B5-07DB-4C68-A976-5068F7CB1593}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4D9F5B5-07DB-4C68-A976-5068F7CB1593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7C6A25B-1B47-4FA2-912D-3D23980F1819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C6A25B-1B47-4FA2-912D-3D23980F1819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C6A25B-1B47-4FA2-912D-3D23980F1819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C6A25B-1B47-4FA2-912D-3D23980F1819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E761049-DF9D-4302-A79F-79085AB5496E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E761049-DF9D-4302-A79F-79085AB5496E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E761049-DF9D-4302-A79F-79085AB5496E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E761049-DF9D-4302-A79F-79085AB5496E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
