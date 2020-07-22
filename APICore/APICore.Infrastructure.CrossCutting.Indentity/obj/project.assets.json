@@ -11,6 +11,53 @@
           "lib/netstandard2.1/DnsClient.dll": {}
         }
       },
+      "FluentValidation/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "9.0.1",
+          "FluentValidation.DependencyInjectionExtensions": "9.0.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "9.0.1",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
+      "MediatR/8.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2251,6 +2298,39 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "APICore.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "APICore.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/APICore.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/APICore.Domain.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "APICore.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "FluentValidation.AspNetCore": "9.0.1",
+          "MediatR": "8.0.2"
+        },
+        "compile": {
+          "bin/placeholder/APICore.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/APICore.Domain.Core.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "APICore.Infrastructure.CrossCutting.Indentity.MongoDb/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2289,6 +2369,67 @@
         "lib/netstandard2.0/DnsClient.xml",
         "lib/netstandard2.1/DnsClient.dll",
         "lib/netstandard2.1/DnsClient.xml"
+      ]
+    },
+    "FluentValidation/9.0.1": {
+      "sha512": "GeF+cPknUFFJ5FkCybmQShaXWwJowBuJozgns6In37wiP2zOWx+kdNPBAN9BlDyhcORdxtXeGnkLZ+OFT85onQ==",
+      "type": "package",
+      "path": "fluentvalidation/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.9.0.1.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net461/FluentValidation.dll",
+        "lib/net461/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/9.0.1": {
+      "sha512": "7DlvStNVZwSAbLC5GyT3nGa8K11hb9R+W6BgnYnSjvnPFGWKpyANwuGTl8HShOInjXJqIJykqHo1UcdemTq/7g==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.aspnetcore.9.0.1.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/netcoreapp2.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp2.1/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/9.0.1": {
+      "sha512": "h71E7XXjFJZsIs6s7AJz2uF4g2BTmEJk3mTKviVRtXuAUF9yV3B7glZjIpEncV6i4u7caqFixKeVpSBB3jVL9w==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.dependencyinjectionextensions.9.0.1.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
+    "MediatR/8.0.2": {
+      "sha512": "6mexVNDRj2T/z0OkxO5H5HPKowTP1iyToCACV/bZ/mU1X4MbzcBlqqQwGF40k+rfi+1ePcTYzSZLsFp2zM4e7g==",
+      "type": "package",
+      "path": "mediatr/8.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.dll",
+        "lib/net461/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.8.0.2.nupkg.sha512",
+        "mediatr.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication/2.2.0": {
@@ -7284,6 +7425,16 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "APICore.Domain/1.0.0": {
+      "type": "project",
+      "path": "../APICore.Domain/APICore.Domain.csproj",
+      "msbuildProject": "../APICore.Domain/APICore.Domain.csproj"
+    },
+    "APICore.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../APICore.Domain.Core/APICore.Domain.Core.csproj",
+      "msbuildProject": "../APICore.Domain.Core/APICore.Domain.Core.csproj"
+    },
     "APICore.Infrastructure.CrossCutting.Indentity.MongoDb/1.0.0": {
       "type": "project",
       "path": "../APICore.Infrastructure.CrossCutting.Indentity.MongoDb/APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj",
@@ -7292,6 +7443,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "APICore.Domain >= 1.0.0",
       "APICore.Infrastructure.CrossCutting.Indentity.MongoDb >= 1.0.0"
     ]
   },
@@ -7325,6 +7477,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj": {
+              "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj"
+            },
             "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj": {
               "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj"
             }
@@ -7350,6 +7505,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

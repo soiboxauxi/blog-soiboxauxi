@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "S5CRoaPeRjsRGzPePhRiLGLrtQUuZL+KQJDLHn4hgRePNa4AmRcTZszobnyVTFL4ECcGn7JKKuRQNubgJN1SpQ==",
+  "success": true,
+  "projectFilePath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Bus\\APICore.Infrastructure.CrossCutting.Bus.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\phant\\.nuget\\packages\\fluentvalidation\\9.0.1\\fluentvalidation.9.0.1.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.0.1\\fluentvalidation.aspnetcore.9.0.1.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.0.1\\fluentvalidation.dependencyinjectionextensions.9.0.1.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\mediatr\\8.0.2\\mediatr.8.0.2.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

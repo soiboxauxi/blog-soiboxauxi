@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "f4Syh7Q8oZnz0k1zxE5iHi6v6fMhDgP/49XE+rM46BXqsjczwOJW50gM7uqiBilOWf5yOU9QhO5mwFfbl06nZg==",
+  "dgSpecHash": "eEPLK6na7eRrxb5sEChvoHtPalDFFyT8PhiccosM2Im5fuWKTi1e77FBXL3XJX3E8x5lzOFYgwNmW245CtIARg==",
   "success": true,
   "projectFilePath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phant\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\fluentvalidation\\9.0.1\\fluentvalidation.9.0.1.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.0.1\\fluentvalidation.aspnetcore.9.0.1.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.0.1\\fluentvalidation.dependencyinjectionextensions.9.0.1.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\mediatr\\8.0.2\\mediatr.8.0.2.nupkg.sha512",
     "C:\\Users\\phant\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\phant\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\phant\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",

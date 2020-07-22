@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Er11BshzSDmUnBryaqB2vcdg6NTLmoZequ3TJJgNgcnJ1LWpkd8AJgDfoWPg6inupqeLfBexh3zzNiypjZHzeQ==",
+  "dgSpecHash": "ZNRVk0f8mhrWHqLcr+nZdyo7q+YNTHY82gxObRVQT+2IyftuaRjwJvk8vyawJfpczRazKm58W4O0wa2IVpH71w==",
   "success": true,
-  "projectFilePath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure\\APICore.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure\\APICore.Infrastructure.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\phant\\.nuget\\packages\\fluentvalidation\\9.0.1\\fluentvalidation.9.0.1.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.0.1\\fluentvalidation.aspnetcore.9.0.1.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.0.1\\fluentvalidation.dependencyinjectionextensions.9.0.1.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\mediatr\\8.0.2\\mediatr.8.0.2.nupkg.sha512",
+    "C:\\Users\\phant\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

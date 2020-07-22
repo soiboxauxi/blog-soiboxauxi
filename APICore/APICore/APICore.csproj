@@ -5,11 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\APICore.ApplicationCore\APICore.Application.csproj" />
     <ProjectReference Include="..\APICore.Infrastructure.CrossCutting.Indentity\APICore.Infrastructure.CrossCutting.Indentity.csproj" />
+    <ProjectReference Include="..\APICore.Infrastructure.CrossCutting.IoC\APICore.Infrastructure.CrossCutting.IoC.csproj" />
   </ItemGroup>
 
 

@@ -1,3 +1,16 @@
 E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.AssemblyInfoInputs.cache
 E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.AssemblyInfo.cs
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.deps.json
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.dll
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.pdb
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.dll
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.pdb
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.csprojAssemblyReference.cache
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.csproj.CopyComplete
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.dll
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.pdb
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\bin\Debug\netcoreapp3.1\APICore.Domain.Core.dll
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\bin\Debug\netcoreapp3.1\APICore.Domain.dll
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\bin\Debug\netcoreapp3.1\APICore.Domain.pdb
+E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\bin\Debug\netcoreapp3.1\APICore.Domain.Core.pdb
 E:\blog-soidev\APICore\APICore.Infrastructure.CrossCutting.Indentity\obj\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Indentity.csproj.CoreCompileInputs.cache
