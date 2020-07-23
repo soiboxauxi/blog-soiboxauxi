@@ -12,8 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\APICore.Application.Core\APICore.Application.csproj" />
-    <ProjectReference Include="..\APICore.Infrastructure.CrossCutting.Indentity\APICore.Infrastructure.CrossCutting.Indentity.csproj" />
-    <ProjectReference Include="..\APICore.Infrastructure.CrossCutting.IoC\APICore.Infrastructure.CrossCutting.IoC.csproj" />
+    <ProjectReference Include="..\Infrastructure\CrossCutting\APICore.Infrastructure.CrossCutting.Indentity\APICore.Infrastructure.CrossCutting.Indentity.csproj" />
+    <ProjectReference Include="..\Infrastructure\CrossCutting\APICore.Infrastructure.CrossCutting.IoC\APICore.Infrastructure.CrossCutting.IoC.csproj" />
   </ItemGroup>
 
 

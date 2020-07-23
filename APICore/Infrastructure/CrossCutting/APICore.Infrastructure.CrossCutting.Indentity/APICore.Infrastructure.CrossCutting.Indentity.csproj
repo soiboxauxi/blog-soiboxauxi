@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Domain\APICore.Domain\APICore.Domain.csproj" />
+    <ProjectReference Include="..\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj" />
+  </ItemGroup>
+
+</Project>

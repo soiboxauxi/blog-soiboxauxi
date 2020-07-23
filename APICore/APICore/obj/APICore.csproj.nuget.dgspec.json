@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj"
+              "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj"
               }
             }
           }
@@ -66,14 +66,96 @@
         }
       }
     },
-    "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
+    "E:\\blog-soidev\\APICore\\APICore\\APICore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj",
-        "projectName": "APICore.Domain.Core",
-        "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj",
+        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore\\APICore.csproj",
+        "projectName": "APICore",
+        "projectPath": "E:\\blog-soidev\\APICore\\APICore\\APICore.csproj",
         "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\obj\\",
+        "outputPath": "E:\\blog-soidev\\APICore\\APICore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\phant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj"
+              },
+              "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj"
+              },
+              "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.7.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj",
+        "projectName": "APICore.Domain.Core",
+        "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
+        "outputPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -134,14 +216,14 @@
         }
       }
     },
-    "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj": {
+    "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj",
+        "projectUniqueName": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj",
         "projectName": "APICore.Domain",
-        "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj",
+        "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj",
         "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\obj\\",
+        "outputPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -160,8 +242,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj"
+              "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj"
               }
             }
           }
@@ -196,14 +278,14 @@
         }
       }
     },
-    "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Bus\\APICore.Infrastructure.CrossCutting.Bus.csproj": {
+    "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Bus\\APICore.Infrastructure.CrossCutting.Bus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Bus\\APICore.Infrastructure.CrossCutting.Bus.csproj",
+        "projectUniqueName": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Bus\\APICore.Infrastructure.CrossCutting.Bus.csproj",
         "projectName": "APICore.Infrastructure.CrossCutting.Bus",
-        "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Bus\\APICore.Infrastructure.CrossCutting.Bus.csproj",
+        "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Bus\\APICore.Infrastructure.CrossCutting.Bus.csproj",
         "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Bus\\obj\\",
+        "outputPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Bus\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -222,8 +304,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj"
+              "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj"
               }
             }
           }
@@ -258,14 +340,14 @@
         }
       }
     },
-    "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj": {
+    "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj",
+        "projectUniqueName": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj",
         "projectName": "APICore.Infrastructure.CrossCutting.Indentity.MongoDb",
-        "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj",
+        "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj",
         "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\obj\\",
+        "outputPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -327,14 +409,14 @@
         }
       }
     },
-    "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj": {
+    "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj",
+        "projectUniqueName": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj",
         "projectName": "APICore.Infrastructure.CrossCutting.Indentity",
-        "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj",
+        "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj",
         "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\obj\\",
+        "outputPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -353,11 +435,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj"
+              "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj"
               },
-              "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj"
+              "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj"
               }
             }
           }
@@ -392,14 +474,14 @@
         }
       }
     },
-    "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj": {
+    "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj",
+        "projectUniqueName": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj",
         "projectName": "APICore.Infrastructure.CrossCutting.IoC",
-        "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj",
+        "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj",
         "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.IoC\\obj\\",
+        "outputPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -418,17 +500,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj"
+              "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj"
               },
-              "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Bus\\APICore.Infrastructure.CrossCutting.Bus.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Bus\\APICore.Infrastructure.CrossCutting.Bus.csproj"
+              "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Bus\\APICore.Infrastructure.CrossCutting.Bus.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Bus\\APICore.Infrastructure.CrossCutting.Bus.csproj"
               },
-              "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj"
+              "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj"
               },
-              "E:\\blog-soidev\\APICore\\APICore.Infrastructure\\APICore.Infrastructure.Data.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure\\APICore.Infrastructure.Data.csproj"
+              "E:\\blog-soidev\\APICore\\Infrastructure\\Data\\APICore.Infrastructure.Data\\APICore.Infrastructure.Data.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\Data\\APICore.Infrastructure.Data\\APICore.Infrastructure.Data.csproj"
               }
             }
           }
@@ -469,14 +551,14 @@
         }
       }
     },
-    "E:\\blog-soidev\\APICore\\APICore.Infrastructure\\APICore.Infrastructure.Data.csproj": {
+    "E:\\blog-soidev\\APICore\\Infrastructure\\Data\\APICore.Infrastructure.Data\\APICore.Infrastructure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.Infrastructure\\APICore.Infrastructure.Data.csproj",
+        "projectUniqueName": "E:\\blog-soidev\\APICore\\Infrastructure\\Data\\APICore.Infrastructure.Data\\APICore.Infrastructure.Data.csproj",
         "projectName": "APICore.Infrastructure.Data",
-        "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure\\APICore.Infrastructure.Data.csproj",
+        "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\Data\\APICore.Infrastructure.Data\\APICore.Infrastructure.Data.csproj",
         "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure\\obj\\",
+        "outputPath": "E:\\blog-soidev\\APICore\\Infrastructure\\Data\\APICore.Infrastructure.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -495,14 +577,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj"
+              "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj"
               },
-              "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj"
+              "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj"
               },
-              "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj"
+              "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj"
               }
             }
           }
@@ -519,88 +601,6 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.10.4, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\blog-soidev\\APICore\\APICore\\APICore.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore\\APICore.csproj",
-        "projectName": "APICore",
-        "projectPath": "E:\\blog-soidev\\APICore\\APICore\\APICore.csproj",
-        "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "E:\\blog-soidev\\APICore\\APICore\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\phant\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj"
-              },
-              "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj"
-              },
-              "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "MediatR.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Microsoft.IdentityModel.Tokens": {
-              "target": "Package",
-              "version": "[6.7.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.5.1, )"
             }
           },
           "imports": [

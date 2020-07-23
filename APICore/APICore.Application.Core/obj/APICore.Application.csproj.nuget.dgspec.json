@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj"
+              "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
+    "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj",
+        "projectUniqueName": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj",
         "projectName": "APICore.Domain.Core",
-        "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj",
+        "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj",
         "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\obj\\",
+        "outputPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -134,14 +134,14 @@
         }
       }
     },
-    "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj": {
+    "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj",
+        "projectUniqueName": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj",
         "projectName": "APICore.Domain",
-        "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj",
+        "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj",
         "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\obj\\",
+        "outputPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -160,8 +160,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain.Core\\APICore.Domain.Core.csproj"
+              "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain.Core\\APICore.Domain.Core.csproj"
               }
             }
           }

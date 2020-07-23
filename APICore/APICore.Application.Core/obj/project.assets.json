@@ -170,13 +170,13 @@
     },
     "APICore.Domain/1.0.0": {
       "type": "project",
-      "path": "../APICore.Domain/APICore.Domain.csproj",
-      "msbuildProject": "../APICore.Domain/APICore.Domain.csproj"
+      "path": "../Domain/APICore.Domain/APICore.Domain.csproj",
+      "msbuildProject": "../Domain/APICore.Domain/APICore.Domain.csproj"
     },
     "APICore.Domain.Core/1.0.0": {
       "type": "project",
-      "path": "../APICore.Domain.Core/APICore.Domain.Core.csproj",
-      "msbuildProject": "../APICore.Domain.Core/APICore.Domain.Core.csproj"
+      "path": "../Domain/APICore.Domain.Core/APICore.Domain.Core.csproj",
+      "msbuildProject": "../Domain/APICore.Domain.Core/APICore.Domain.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -214,8 +214,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj": {
-              "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj"
+            "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj": {
+              "projectPath": "E:\\blog-soidev\\APICore\\Domain\\APICore.Domain\\APICore.Domain.csproj"
             }
           }
         }

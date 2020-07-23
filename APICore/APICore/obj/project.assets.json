@@ -7861,38 +7861,38 @@
     },
     "APICore.Domain/1.0.0": {
       "type": "project",
-      "path": "../APICore.Domain/APICore.Domain.csproj",
-      "msbuildProject": "../APICore.Domain/APICore.Domain.csproj"
+      "path": "../Domain/APICore.Domain/APICore.Domain.csproj",
+      "msbuildProject": "../Domain/APICore.Domain/APICore.Domain.csproj"
     },
     "APICore.Domain.Core/1.0.0": {
       "type": "project",
-      "path": "../APICore.Domain.Core/APICore.Domain.Core.csproj",
-      "msbuildProject": "../APICore.Domain.Core/APICore.Domain.Core.csproj"
+      "path": "../Domain/APICore.Domain.Core/APICore.Domain.Core.csproj",
+      "msbuildProject": "../Domain/APICore.Domain.Core/APICore.Domain.Core.csproj"
     },
     "APICore.Infrastructure.CrossCutting.Bus/1.0.0": {
       "type": "project",
-      "path": "../APICore.Infrastructure.CrossCutting.Bus/APICore.Infrastructure.CrossCutting.Bus.csproj",
-      "msbuildProject": "../APICore.Infrastructure.CrossCutting.Bus/APICore.Infrastructure.CrossCutting.Bus.csproj"
+      "path": "../Infrastructure/CrossCutting/APICore.Infrastructure.CrossCutting.Bus/APICore.Infrastructure.CrossCutting.Bus.csproj",
+      "msbuildProject": "../Infrastructure/CrossCutting/APICore.Infrastructure.CrossCutting.Bus/APICore.Infrastructure.CrossCutting.Bus.csproj"
     },
     "APICore.Infrastructure.CrossCutting.Indentity/1.0.0": {
       "type": "project",
-      "path": "../APICore.Infrastructure.CrossCutting.Indentity/APICore.Infrastructure.CrossCutting.Indentity.csproj",
-      "msbuildProject": "../APICore.Infrastructure.CrossCutting.Indentity/APICore.Infrastructure.CrossCutting.Indentity.csproj"
+      "path": "../Infrastructure/CrossCutting/APICore.Infrastructure.CrossCutting.Indentity/APICore.Infrastructure.CrossCutting.Indentity.csproj",
+      "msbuildProject": "../Infrastructure/CrossCutting/APICore.Infrastructure.CrossCutting.Indentity/APICore.Infrastructure.CrossCutting.Indentity.csproj"
     },
     "APICore.Infrastructure.CrossCutting.Indentity.MongoDb/1.0.0": {
       "type": "project",
-      "path": "../APICore.Infrastructure.CrossCutting.Indentity.MongoDb/APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj",
-      "msbuildProject": "../APICore.Infrastructure.CrossCutting.Indentity.MongoDb/APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj"
+      "path": "../Infrastructure/CrossCutting/APICore.Infrastructure.CrossCutting.Indentity.MongoDb/APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj",
+      "msbuildProject": "../Infrastructure/CrossCutting/APICore.Infrastructure.CrossCutting.Indentity.MongoDb/APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj"
     },
     "APICore.Infrastructure.CrossCutting.IoC/1.0.0": {
       "type": "project",
-      "path": "../APICore.Infrastructure.CrossCutting.IoC/APICore.Infrastructure.CrossCutting.IoC.csproj",
-      "msbuildProject": "../APICore.Infrastructure.CrossCutting.IoC/APICore.Infrastructure.CrossCutting.IoC.csproj"
+      "path": "../Infrastructure/CrossCutting/APICore.Infrastructure.CrossCutting.IoC/APICore.Infrastructure.CrossCutting.IoC.csproj",
+      "msbuildProject": "../Infrastructure/CrossCutting/APICore.Infrastructure.CrossCutting.IoC/APICore.Infrastructure.CrossCutting.IoC.csproj"
     },
     "APICore.Infrastructure.Data/1.0.0": {
       "type": "project",
-      "path": "../APICore.Infrastructure/APICore.Infrastructure.Data.csproj",
-      "msbuildProject": "../APICore.Infrastructure/APICore.Infrastructure.Data.csproj"
+      "path": "../Infrastructure/Data/APICore.Infrastructure.Data/APICore.Infrastructure.Data.csproj",
+      "msbuildProject": "../Infrastructure/Data/APICore.Infrastructure.Data/APICore.Infrastructure.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7938,11 +7938,11 @@
             "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj": {
               "projectPath": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj"
             },
-            "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj": {
-              "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj"
+            "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj": {
+              "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj"
             },
-            "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj": {
-              "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj"
+            "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj": {
+              "projectPath": "E:\\blog-soidev\\APICore\\Infrastructure\\CrossCutting\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj"
             }
           }
         }
