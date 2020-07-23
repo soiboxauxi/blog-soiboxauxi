@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore", "APICore\APICore.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Infrastructure.Data", "APICore.Infrastructure\APICore.Infrastructure.Data.csproj", "{D4740EB7-D488-4015-A55F-B58286D89B7C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Application", "APICore.ApplicationCore\APICore.Application.csproj", "{464F1721-4E30-438F-8575-5CFCDCA3B543}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Domain", "APICore.Domain\APICore.Domain.csproj", "{E4D9F5B5-07DB-4C68-A976-5068F7CB1593}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Infrastructure.CrossCutting.Indentity.MongoDb", "APICore.Infrastructure.CrossCutting.Indentity.MongoDb\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj", "{C7C6A25B-1B47-4FA2-912D-3D23980F1819}"
@@ -19,15 +17,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{FB02E177-3179-4714-A49B-8BF0AF8C3369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APICore.Domain.Core", "APICore.Domain.Core\APICore.Domain.Core.csproj", "{199D06AA-1641-4CBC-A03F-C2B50100D458}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Domain.Core", "APICore.Domain.Core\APICore.Domain.Core.csproj", "{199D06AA-1641-4CBC-A03F-C2B50100D458}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{024A72DC-C806-4F7D-895E-E7B3385997E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APICore.Infrastructure.CrossCutting.IoC", "APICore.Infrastructure.CrossCutting.IoC\APICore.Infrastructure.CrossCutting.IoC.csproj", "{128893D2-715D-40DC-B59B-F2AE284DD09A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Infrastructure.CrossCutting.IoC", "APICore.Infrastructure.CrossCutting.IoC\APICore.Infrastructure.CrossCutting.IoC.csproj", "{128893D2-715D-40DC-B59B-F2AE284DD09A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APICore.Infrastructure.CrossCutting.Bus", "APICore.Infrastructure.CrossCutting.Bus\APICore.Infrastructure.CrossCutting.Bus.csproj", "{D25E168F-D695-488D-B13D-52F8C0CD0853}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Infrastructure.CrossCutting.Bus", "APICore.Infrastructure.CrossCutting.Bus\APICore.Infrastructure.CrossCutting.Bus.csproj", "{D25E168F-D695-488D-B13D-52F8C0CD0853}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{13DFF87A-8F6C-403C-BAB6-C67D23A10393}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Application", "APICore.Application.Core\APICore.Application.csproj", "{511BCD42-D17D-4B0D-A656-A8BECBF9C390}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +43,6 @@ Global
 		{D4740EB7-D488-4015-A55F-B58286D89B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4740EB7-D488-4015-A55F-B58286D89B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4740EB7-D488-4015-A55F-B58286D89B7C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{464F1721-4E30-438F-8575-5CFCDCA3B543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{464F1721-4E30-438F-8575-5CFCDCA3B543}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{464F1721-4E30-438F-8575-5CFCDCA3B543}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{464F1721-4E30-438F-8575-5CFCDCA3B543}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E4D9F5B5-07DB-4C68-A976-5068F7CB1593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E4D9F5B5-07DB-4C68-A976-5068F7CB1593}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4D9F5B5-07DB-4C68-A976-5068F7CB1593}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -71,6 +67,10 @@ Global
 		{D25E168F-D695-488D-B13D-52F8C0CD0853}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D25E168F-D695-488D-B13D-52F8C0CD0853}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D25E168F-D695-488D-B13D-52F8C0CD0853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{511BCD42-D17D-4B0D-A656-A8BECBF9C390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{511BCD42-D17D-4B0D-A656-A8BECBF9C390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{511BCD42-D17D-4B0D-A656-A8BECBF9C390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{511BCD42-D17D-4B0D-A656-A8BECBF9C390}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

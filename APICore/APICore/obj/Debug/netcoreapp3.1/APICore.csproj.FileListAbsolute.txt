@@ -63,7 +63,8 @@ E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\APICore.Infrastructure.Cr
 E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.IoC.dll
 E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.IoC.pdb
 E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Bus.pdb
-E:\blog-soidev\APICore\APICore\obj\Debug\netcoreapp3.1\APICore.csproj.CoreCompileInputs.cache
-E:\blog-soidev\APICore\APICore\obj\Debug\netcoreapp3.1\APICore.MvcApplicationPartsAssemblyInfo.cache
 E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\APICore.Infrastructure.Data.dll
 E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\APICore.Infrastructure.Data.pdb
+E:\blog-soidev\APICore\APICore\obj\Debug\netcoreapp3.1\APICore.csproj.CoreCompileInputs.cache
+E:\blog-soidev\APICore\APICore\obj\Debug\netcoreapp3.1\APICore.MvcApplicationPartsAssemblyInfo.cs
+E:\blog-soidev\APICore\APICore\obj\Debug\netcoreapp3.1\APICore.MvcApplicationPartsAssemblyInfo.cache

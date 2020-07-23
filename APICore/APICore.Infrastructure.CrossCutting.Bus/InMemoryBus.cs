@@ -11,12 +11,14 @@ namespace APICore.Infrastructure.CrossCutting.Bus
         private readonly IMediator _mediator;
         private readonly IEventStore _eventStore;
 
-        public InMemoryBus(IEventStore eventStore, IMediator mediator)
+        public InMemoryBus(
+            IEventStore eventStore, 
+            IMediator mediator)
         {
-            _eventStore = eventStore;
-            _mediator = mediator;
+             _eventStore = eventStore;
+             _mediator = mediator;
         }
-
+        
         public Task SendCommand<T>(T command) where T : Command
         {
             return _mediator.Send(command);

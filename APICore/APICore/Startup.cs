@@ -42,7 +42,9 @@ namespace APICore
             // .AddNewtonsoftJson(
             //     options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
             // );
-            
+
+            // ----- Database -----
+            services.AddCustomizedDatabase(Configuration, _env);
 
             // Adding MediatR for Domain Events and Notifications
             services.AddMediatR(typeof(Startup));

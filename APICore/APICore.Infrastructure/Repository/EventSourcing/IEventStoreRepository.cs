@@ -6,7 +6,7 @@ namespace APICore.Infrastructure.Data.Repository.EventSourcing
 {
     public interface IEventStoreRepository
     {
-        void Store(StoredEvent theEvent);
+        void StoreAsync(StoredEvent theEvent);
         IList<StoredEvent> All(Guid aggregateId);
     }
 }

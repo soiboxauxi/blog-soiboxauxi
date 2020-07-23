@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QrikgbnxJ0Q1kT/Lqu+lAHccilxrSAa50sAlTb2VFhahFUfUi5OjUGczV5HHmb5WABsq8rh5LwPA3bidLxsrLA==",
+  "dgSpecHash": "50k6rJnwUvPKmipkmUno5qTTtc5ME/MYJLLccvs8dLG2lxOf9DJ4Q/3q/akifPnqE67iUwLucGzIDYiE+MRyDA==",
   "success": true,
-  "projectFilePath": "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\APICore.Application.csproj",
+  "projectFilePath": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phant\\.nuget\\packages\\fluentvalidation\\9.0.1\\fluentvalidation.9.0.1.nupkg.sha512",
     "C:\\Users\\phant\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.0.1\\fluentvalidation.aspnetcore.9.0.1.nupkg.sha512",

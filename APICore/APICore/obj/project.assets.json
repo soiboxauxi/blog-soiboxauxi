@@ -2539,7 +2539,9 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "APICore.Domain": "1.0.0",
-          "APICore.Domain.Core": "1.0.0"
+          "APICore.Domain.Core": "1.0.0",
+          "APICore.Infrastructure.CrossCutting.Indentity.MongoDb": "1.0.0",
+          "MongoDB.Driver": "2.10.4"
         },
         "compile": {
           "bin/placeholder/APICore.Infrastructure.Data.dll": {}
@@ -7854,8 +7856,8 @@
     },
     "APICore.Application/1.0.0": {
       "type": "project",
-      "path": "../APICore.ApplicationCore/APICore.Application.csproj",
-      "msbuildProject": "../APICore.ApplicationCore/APICore.Application.csproj"
+      "path": "../APICore.Application.Core/APICore.Application.csproj",
+      "msbuildProject": "../APICore.Application.Core/APICore.Application.csproj"
     },
     "APICore.Domain/1.0.0": {
       "type": "project",
@@ -7933,8 +7935,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\APICore.Application.csproj": {
-              "projectPath": "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\APICore.Application.csproj"
+            "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj": {
+              "projectPath": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj"
             },
             "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj": {
               "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj"

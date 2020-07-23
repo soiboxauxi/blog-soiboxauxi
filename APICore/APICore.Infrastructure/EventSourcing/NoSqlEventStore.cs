@@ -6,12 +6,12 @@ using System.Text.Json;
 
 namespace APICore.Infrastructure.Data.EventSourcing
 {
-    public class SqlEventStore : IEventStore
+    public class NoSqlEventStore : IEventStore
     {
         private readonly IEventStoreRepository _eventStoreRepository;
         private readonly IUser _user;
 
-        public SqlEventStore(IEventStoreRepository eventStoreRepository, IUser user)
+        public NoSqlEventStore(IEventStoreRepository eventStoreRepository, IUser user)
         {
             _eventStoreRepository = eventStoreRepository;
             _user = user;
@@ -26,7 +26,7 @@ namespace APICore.Infrastructure.Data.EventSourcing
                 serializedData,
                 _user.Name);
 
-            _eventStoreRepository.Store(storedEvent);
+            _eventStoreRepository.StoreAsync(storedEvent);
         }
     }
 }

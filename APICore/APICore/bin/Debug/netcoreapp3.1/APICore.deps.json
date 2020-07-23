@@ -1894,7 +1894,9 @@
       "APICore.Infrastructure.Data/1.0.0": {
         "dependencies": {
           "APICore.Domain": "1.0.0",
-          "APICore.Domain.Core": "1.0.0"
+          "APICore.Domain.Core": "1.0.0",
+          "APICore.Infrastructure.CrossCutting.Indentity.MongoDb": "1.0.0",
+          "MongoDB.Driver": "2.10.4"
         },
         "runtime": {
           "APICore.Infrastructure.Data.dll": {}

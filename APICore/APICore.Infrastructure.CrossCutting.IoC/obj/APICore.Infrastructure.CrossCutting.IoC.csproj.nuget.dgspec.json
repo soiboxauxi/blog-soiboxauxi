@@ -438,6 +438,9 @@
               },
               "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj": {
                 "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj"
+              },
+              "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj"
               }
             }
           }
@@ -450,6 +453,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.10.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

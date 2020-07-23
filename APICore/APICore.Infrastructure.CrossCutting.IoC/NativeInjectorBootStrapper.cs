@@ -26,8 +26,8 @@ namespace APICore.Infrastructure.CrossCutting.IoC
             services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
 
             // Infra - Data EventSourcing
-            //services.AddScoped<IEventStoreRepository, EventStoreSqlRepository>();
-            services.AddScoped<IEventStore, SqlEventStore>();
+            services.AddScoped<IEventStoreRepository, EventStoreMongoDbRepository>();
+            services.AddScoped<IEventStore, NoSqlEventStore>();
 
             // Infra - Identity
             services.AddScoped<IUser, AspNetUser>();

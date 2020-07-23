@@ -191,11 +191,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\APICore.Application.csproj",
+      "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj",
       "projectName": "APICore.Application",
-      "projectPath": "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\APICore.Application.csproj",
+      "projectPath": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj",
       "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-      "outputPath": "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\obj\\",
+      "outputPath": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

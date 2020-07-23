@@ -13,7 +13,6 @@ namespace APICore.Domain.Core.Events
             User = user;
         }
 
-        // EF Constructor
         protected StoredEvent() { }
 
         public Guid Id { get; private set; }

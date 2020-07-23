@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PE62qoPg57uTHPS2v6IXY2XIgpMhLxpiYoRd6eKUQunRONkYlsk0xA7IoBKtuYaqjMa/f9Fynq5gmjfYaVm1ww==",
+  "dgSpecHash": "yRC3OqCHJR11NGY7AjtIp7TFSP6tspz9J0eaiJFsiTncdLCBU5KJDND34iqreh8tvZVWMtOvGSG5DAecyGTzLg==",
   "success": true,
   "projectFilePath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.IoC\\APICore.Infrastructure.CrossCutting.IoC.csproj",
   "expectedPackageFiles": [

@@ -4,14 +4,14 @@
     "E:\\blog-soidev\\APICore\\APICore\\APICore.csproj": {}
   },
   "projects": {
-    "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\APICore.Application.csproj": {
+    "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\APICore.Application.csproj",
+        "projectUniqueName": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj",
         "projectName": "APICore.Application",
-        "projectPath": "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\APICore.Application.csproj",
+        "projectPath": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj",
         "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\obj\\",
+        "outputPath": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -500,6 +500,9 @@
               },
               "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj": {
                 "projectPath": "E:\\blog-soidev\\APICore\\APICore.Domain\\APICore.Domain.csproj"
+              },
+              "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb\\APICore.Infrastructure.CrossCutting.Indentity.MongoDb.csproj"
               }
             }
           }
@@ -512,6 +515,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.10.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -560,8 +569,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\APICore.Application.csproj": {
-                "projectPath": "E:\\blog-soidev\\APICore\\APICore.ApplicationCore\\APICore.Application.csproj"
+              "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj": {
+                "projectPath": "E:\\blog-soidev\\APICore\\APICore.Application.Core\\APICore.Application.csproj"
               },
               "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj": {
                 "projectPath": "E:\\blog-soidev\\APICore\\APICore.Infrastructure.CrossCutting.Indentity\\APICore.Infrastructure.CrossCutting.Indentity.csproj"
