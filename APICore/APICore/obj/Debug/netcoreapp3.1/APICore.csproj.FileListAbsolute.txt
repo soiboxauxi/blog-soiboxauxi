@@ -65,6 +65,12 @@ E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\APICore.Infrastructure.Cr
 E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\APICore.Infrastructure.CrossCutting.Bus.pdb
 E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\APICore.Infrastructure.Data.dll
 E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\APICore.Infrastructure.Data.pdb
+E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\blog-soidev\APICore\APICore\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 E:\blog-soidev\APICore\APICore\obj\Debug\netcoreapp3.1\APICore.csproj.CoreCompileInputs.cache
 E:\blog-soidev\APICore\APICore\obj\Debug\netcoreapp3.1\APICore.MvcApplicationPartsAssemblyInfo.cs
 E:\blog-soidev\APICore\APICore\obj\Debug\netcoreapp3.1\APICore.MvcApplicationPartsAssemblyInfo.cache

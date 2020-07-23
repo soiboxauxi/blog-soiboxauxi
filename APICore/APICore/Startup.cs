@@ -46,6 +46,9 @@ namespace APICore
             // ----- Database -----
             services.AddCustomizedDatabase(Configuration, _env);
 
+            // ----- Auth -----
+            services.AddCustomizedAuth(Configuration);
+
             // Adding MediatR for Domain Events and Notifications
             services.AddMediatR(typeof(Startup));
 
