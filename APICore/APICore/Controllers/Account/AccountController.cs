@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MongoDB.Driver;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,6 +29,7 @@ namespace APICore.Controllers.AccountController
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly RoleManager<MongoRole> _roleManager;
+        private readonly IMongoCollection<RefreshToken> _refreshTokenCollection;
         private readonly IJwtFactory _jwtFactory;
         private readonly ILogger _logger;
 
@@ -35,6 +37,7 @@ namespace APICore.Controllers.AccountController
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             RoleManager<MongoRole> roleManager,
+            IMongoCollection<RefreshToken> refreshTokenCollection,
             IJwtFactory jwtFactory,
             ILoggerFactory loggerFactory,
             INotificationHandler<DomainNotification> notifications,
@@ -43,6 +46,7 @@ namespace APICore.Controllers.AccountController
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
+            _refreshTokenCollection = refreshTokenCollection;
             _jwtFactory = jwtFactory;
             _logger = loggerFactory.CreateLogger<AccountController>();
         }
@@ -154,8 +158,8 @@ namespace APICore.Controllers.AccountController
                 ExpiryDate = DateTime.UtcNow.AddMinutes(90),
                 JwtId = jwtToken.JwtId
             };
-            // await _dbContext.RefreshTokens.AddAsync(refreshToken);
-            // await _dbContext.SaveChangesAsync();
+
+            await _refreshTokenCollection.InsertOneAsync(refreshToken).ConfigureAwait(true);
 
             return new TokenViewModel
             {

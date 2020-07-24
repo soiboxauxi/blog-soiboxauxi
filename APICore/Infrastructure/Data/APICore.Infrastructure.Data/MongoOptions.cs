@@ -9,6 +9,7 @@ namespace APICore.Infrastructure.Data
         public string ConnectionString { get; set; } = "mongodb://localhost/default";
 
         public string StoredEventCollection { get; set; } = "StoredEvent";
-        
+        public string RefreshTokenCollection { get; set; } = "RefreshToken";
+
     }
 }

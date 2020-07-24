@@ -1,4 +1,5 @@
 ﻿using APICore.Domain.Core.Events;
+using APICore.Infrastructure.CrossCutting.Indentity.Authorization;
 using APICore.Infrastructure.CrossCutting.Indentity.MongoDb.Mongo;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -15,8 +16,10 @@ namespace APICore.Infrastructure.Data.Extensions
             setupDatabaseAction(dbOptions);
 
             var storedEventCollection = MongoUtil.FromConnectionString<StoredEvent>(dbOptions.ConnectionString, dbOptions.StoredEventCollection);
+            var refreshTokenCollection = MongoUtil.FromConnectionString<RefreshToken>(dbOptions.ConnectionString, dbOptions.RefreshTokenCollection);
 
             services.AddSingleton(x => storedEventCollection);
+            services.AddSingleton(x => refreshTokenCollection);
 
             return services;
         }

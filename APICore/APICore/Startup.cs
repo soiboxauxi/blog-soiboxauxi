@@ -28,10 +28,19 @@ namespace APICore
         public void ConfigureServices(IServiceCollection services)
         {
             // ----- Identity MongoDB -----
-            services.AddIdentityMongoDbProvider<ApplicationUser>(mongo =>
-            {
-                mongo.ConnectionString = ConnectionString;
-            });
+            services.AddIdentityMongoDbProvider<ApplicationUser>(identity =>
+                {
+                identity.Password.RequireDigit = false;
+                identity.Password.RequireLowercase = false;
+                identity.Password.RequireNonAlphanumeric = false;
+                identity.Password.RequireUppercase = false;
+                identity.Password.RequiredLength = 1;
+                identity.Password.RequiredUniqueChars = 0;
+                } ,
+                mongo =>
+                {
+                    mongo.ConnectionString = ConnectionString;
+                });
 
             // ----- Default -----
             services.AddControllers().AddJsonOptions(x => {
