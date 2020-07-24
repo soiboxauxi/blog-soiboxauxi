@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MediatR;
 using APICore.Infrastructure.CrossCutting.IoC;
+using Microsoft.Extensions.Logging;
 
 namespace APICore
 {
@@ -51,7 +52,7 @@ namespace APICore
             // .AddNewtonsoftJson(
             //     options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
             // );
-
+            
             // ----- Database -----
             services.AddCustomizedDatabase(Configuration, _env);
 
@@ -69,12 +70,15 @@ namespace APICore
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
             // ----- Error Handling -----
             app.UseCustomizedErrorHandling(_env);
 
             app.UseRouting();
+
+            // ----- Logger -----
+            app.UseCustomizedLogger(Configuration, loggerFactory);
 
             // ----- CORS -----
             app.UseCors(x => x
