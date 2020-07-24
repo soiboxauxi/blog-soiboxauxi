@@ -4,6 +4,7 @@ using APICore.Domain.Core.Notifications;
 using APICore.Domain.Interfaces;
 using APICore.Infrastructure.CrossCutting.Bus;
 using APICore.Infrastructure.CrossCutting.Indentity.Models;
+using APICore.Infrastructure.CrossCutting.Indentity.Services;
 using APICore.Infrastructure.Data.EventSourcing;
 using APICore.Infrastructure.Data.Repository.EventSourcing;
 using MediatR;
@@ -31,6 +32,7 @@ namespace APICore.Infrastructure.CrossCutting.IoC
 
             // Infra - Identity
             services.AddScoped<IUser, AspNetUser>();
+            services.AddSingleton<IJwtFactory, JwtFactory>();
         }
     }
 }

@@ -34,7 +34,7 @@ namespace APICore.Controllers.AccountController
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            // RoleManager<ApplicationRole> roleManager,
+            RoleManager<MongoRole> roleManager,
             IJwtFactory jwtFactory,
             ILoggerFactory loggerFactory,
             INotificationHandler<DomainNotification> notifications,
@@ -42,7 +42,7 @@ namespace APICore.Controllers.AccountController
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            // _roleManager = roleManager;
+            _roleManager = roleManager;
             _jwtFactory = jwtFactory;
             _logger = loggerFactory.CreateLogger<AccountController>();
         }
