@@ -9,6 +9,7 @@ using APICore.Domain.Core.Notifications;
 using APICore.Infrastructure.CrossCutting.Indentity;
 using APICore.Infrastructure.CrossCutting.Indentity.Authorization;
 using APICore.Infrastructure.CrossCutting.Indentity.Models.AccountViewModels;
+using APICore.Infrastructure.CrossCutting.Indentity.MongoDb.Models;
 using APICore.Infrastructure.CrossCutting.Indentity.Services;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -26,14 +27,14 @@ namespace APICore.Controllers.AccountController
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly RoleManager<MongoRole> _roleManager;
         private readonly IJwtFactory _jwtFactory;
         private readonly ILogger _logger;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            RoleManager<IdentityRole> roleManager,
+            // RoleManager<ApplicationRole> roleManager,
             IJwtFactory jwtFactory,
             ILoggerFactory loggerFactory,
             INotificationHandler<DomainNotification> notifications,
@@ -41,7 +42,7 @@ namespace APICore.Controllers.AccountController
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            _roleManager = roleManager;
+            // _roleManager = roleManager;
             _jwtFactory = jwtFactory;
             _logger = loggerFactory.CreateLogger<AccountController>();
         }

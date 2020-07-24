@@ -1,9 +1,0 @@
-E:\blog-soidev\APICore\APICore.Infrastructure\bin\Debug\netcoreapp3.1\APICore.Infrastructure.deps.json
-E:\blog-soidev\APICore\APICore.Infrastructure\bin\Debug\netcoreapp3.1\APICore.Infrastructure.dll
-E:\blog-soidev\APICore\APICore.Infrastructure\bin\Debug\netcoreapp3.1\APICore.Infrastructure.pdb
-E:\blog-soidev\APICore\APICore.Infrastructure\obj\Debug\netcoreapp3.1\APICore.Infrastructure.csprojAssemblyReference.cache
-E:\blog-soidev\APICore\APICore.Infrastructure\obj\Debug\netcoreapp3.1\APICore.Infrastructure.AssemblyInfoInputs.cache
-E:\blog-soidev\APICore\APICore.Infrastructure\obj\Debug\netcoreapp3.1\APICore.Infrastructure.AssemblyInfo.cs
-E:\blog-soidev\APICore\APICore.Infrastructure\obj\Debug\netcoreapp3.1\APICore.Infrastructure.csproj.CoreCompileInputs.cache
-E:\blog-soidev\APICore\APICore.Infrastructure\obj\Debug\netcoreapp3.1\APICore.Infrastructure.dll
-E:\blog-soidev\APICore\APICore.Infrastructure\obj\Debug\netcoreapp3.1\APICore.Infrastructure.pdb

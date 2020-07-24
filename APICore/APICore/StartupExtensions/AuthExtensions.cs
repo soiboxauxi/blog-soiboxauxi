@@ -22,10 +22,10 @@ namespace APICore.StartupExtensions
             var secretKey = configuration.GetSection("SecretKey").Value;
             var _signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddRoles<IdentityRole>()
-                .AddDefaultTokenProviders();
-
+            //services.AddIdentity<ApplicationUser, IdentityRole>()
+            //    .AddRoles<IdentityRole>()
+            //    .AddDefaultTokenProviders();
+            
             var jwtAppSettingOptions = configuration.GetSection(nameof(JwtIssuerOptions));
 
             services.Configure<JwtIssuerOptions>(options =>
@@ -64,21 +64,21 @@ namespace APICore.StartupExtensions
             });
 
 
-            services.AddAuthorization(options =>
-            {
-                var policy1 = new AuthorizationPolicyBuilder()
-                    .RequireAuthenticatedUser()
-                    .RequireRole("Admin")
-                    .AddRequirements(new ClaimRequirement("Customers_Write", "Write"))
-                    .Build();
-                var policy2 = new AuthorizationPolicyBuilder()
-                    .RequireAuthenticatedUser()
-                    .RequireRole("Admin")
-                    .AddRequirements(new ClaimRequirement("Customers_Remove", "Remove"))
-                    .Build();
-                options.AddPolicy("CanWriteCustomerData", policy1);
-                options.AddPolicy("CanRemoveCustomerData", policy2);
-            });
+            // services.AddAuthorization(options =>
+            // {
+            //     var policy1 = new AuthorizationPolicyBuilder()
+            //         .RequireAuthenticatedUser()
+            //         .RequireRole("Admin")
+            //         .AddRequirements(new ClaimRequirement("Customers_Write", "Write"))
+            //         .Build();
+            //     var policy2 = new AuthorizationPolicyBuilder()
+            //         .RequireAuthenticatedUser()
+            //         .RequireRole("Admin")
+            //         .AddRequirements(new ClaimRequirement("Customers_Remove", "Remove"))
+            //         .Build();
+            //     options.AddPolicy("CanWriteCustomerData", policy1);
+            //     options.AddPolicy("CanRemoveCustomerData", policy2);
+            // });
             
             return services;
         }
