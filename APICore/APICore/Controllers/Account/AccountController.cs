@@ -138,10 +138,11 @@ namespace APICore.Controllers.AccountController
                 NotifyModelStateErrors();
                 return Response();
             }
-
+            
             // Get current RefreshToken
             var refreshTokenCurrent = _refreshTokenCollection.FirstOrDefaultAsync
                 (x => x.Token == model.RefreshToken && !x.Used && !x.Invalidated);
+
             if (refreshTokenCurrent is null)
             {
                 NotifyError("RefreshToken", "Refresh token does not exist");
@@ -164,8 +165,8 @@ namespace APICore.Controllers.AccountController
             }
 
             // Remove current RefreshToken
-            //_dbContext.Remove(refreshTokenCurrent);
-            //await _dbContext.SaveChangesAsync();
+            await _refreshTokenCollection.DeleteOneAsync
+                (x => x.Token == model.RefreshToken && !x.Used && !x.Invalidated);
 
             // Update current RefreshToken
             refreshTokenCurrent.Result.Used = true;
