@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,45 @@ namespace APICore.StartupExtensions
             if (environment.IsDevelopment())
             {
                 // Register the Swagger generator, defining 1 or more Swagger documents
-                service.AddSwaggerGen();
+                service.AddSwaggerGen(c =>
+                {
+                    c.SwaggerDoc("v1", new OpenApiInfo
+                    {
+                        Version = "v1",
+                        Title = "APICore",
+                        Description = "",
+                        Contact = new OpenApiContact { Name = "Sói", Email = "soiboxauxi@gmail.com", Url = new Uri("https://www.google.com/") },
+                        License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://www.google.com/") }
+                    });
+
+                    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                    {
+                        Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+                        Name = "Authorization",
+                        In = ParameterLocation.Header,
+                        Type = SecuritySchemeType.ApiKey,
+                        Scheme = "Bearer"
+                    });
+
+                    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                    {
+                        {
+                            new OpenApiSecurityScheme
+                            {
+                                Reference = new OpenApiReference
+                                {
+                                    Type = ReferenceType.SecurityScheme,
+                                    Id = "Bearer"
+                                },
+                                Scheme = "oauth2",
+                                Name = "Bearer",
+                                In = ParameterLocation.Header,
+                            },
+                            new List<string>()
+                            // new string[] { }
+                        }
+                    });
+                });
             }            
 
             return service;

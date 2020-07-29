@@ -6,10 +6,12 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using APICore.Domain.Core.Bus;
 using APICore.Domain.Core.Notifications;
+using APICore.Domain.Interfaces;
 using APICore.Infrastructure.CrossCutting.Indentity;
 using APICore.Infrastructure.CrossCutting.Indentity.Authorization;
 using APICore.Infrastructure.CrossCutting.Indentity.Models.AccountViewModels;
 using APICore.Infrastructure.CrossCutting.Indentity.MongoDb.Models;
+using APICore.Infrastructure.CrossCutting.Indentity.MongoDb.Mongo;
 using APICore.Infrastructure.CrossCutting.Indentity.Services;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -24,11 +26,13 @@ namespace APICore.Controllers.AccountController
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AccountController : ApiController
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly RoleManager<MongoRole> _roleManager;
+        private readonly IUser _user;
         private readonly IMongoCollection<RefreshToken> _refreshTokenCollection;
         private readonly IJwtFactory _jwtFactory;
         private readonly ILogger _logger;
@@ -38,6 +42,7 @@ namespace APICore.Controllers.AccountController
             SignInManager<ApplicationUser> signInManager,
             RoleManager<MongoRole> roleManager,
             IMongoCollection<RefreshToken> refreshTokenCollection,
+            IUser user,
             IJwtFactory jwtFactory,
             ILoggerFactory loggerFactory,
             INotificationHandler<DomainNotification> notifications,
@@ -47,6 +52,7 @@ namespace APICore.Controllers.AccountController
             _signInManager = signInManager;
             _roleManager = roleManager;
             _refreshTokenCollection = refreshTokenCollection;
+            _user = user;
             _jwtFactory = jwtFactory;
             _logger = loggerFactory.CreateLogger<AccountController>();
         }
@@ -120,6 +126,62 @@ namespace APICore.Controllers.AccountController
             _logger.LogInformation(3, "User created a new account with password.");
 
             return Response();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [Route("refresh")]
+        public async Task<IActionResult> Refresh(TokenViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                NotifyModelStateErrors();
+                return Response();
+            }
+
+            // Get current RefreshToken
+            var refreshTokenCurrent = _refreshTokenCollection.FirstOrDefaultAsync
+                (x => x.Token == model.RefreshToken && !x.Used && !x.Invalidated);
+            if (refreshTokenCurrent is null)
+            {
+                NotifyError("RefreshToken", "Refresh token does not exist");
+                return Response();
+            }
+            if (refreshTokenCurrent.Result.ExpiryDate < DateTime.UtcNow)
+            {
+                // Update current RefreshToken
+                refreshTokenCurrent.Result.Invalidated = true;
+                NotifyError("RefreshToken", "Refresh token invalid");
+                return Response();
+            }
+
+            // Get User
+            var appUser = await _userManager.FindByIdAsync(refreshTokenCurrent.Result.UserId);
+            if (appUser is null)
+            {
+                NotifyError("User", "User does not exist");
+                return Response();
+            }
+
+            // Remove current RefreshToken
+            //_dbContext.Remove(refreshTokenCurrent);
+            //await _dbContext.SaveChangesAsync();
+
+            // Update current RefreshToken
+            refreshTokenCurrent.Result.Used = true;
+
+            return Response(await GenerateToken(appUser));
+        }
+
+        [HttpGet]
+        [Route("current")]
+        public IActionResult GetCurrent()
+        {
+            return Response(new
+            {
+                IsAuthenticated = _user.IsAuthenticated(),
+                ClaimsIdentity = _user.GetClaimsIdentity().Select(x => new { x.Type, x.Value }),
+            });
         }
 
         private async Task<TokenViewModel> GenerateToken(ApplicationUser appUser)

@@ -16,7 +16,7 @@ namespace APICore.Infrastructure.CrossCutting.Indentity.Models
 
         public string Name => _accessor.HttpContext.User.Identity.Name;
 
-        public string UserName { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+        // public string UserName { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
         public bool IsAuthenticated()
         {
