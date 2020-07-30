@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using MediatR;
 using APICore.Infrastructure.CrossCutting.IoC;
 using Microsoft.Extensions.Logging;
+using APICore.Configurations;
 
 namespace APICore
 {
@@ -58,6 +59,9 @@ namespace APICore
 
             // ----- Auth -----
             services.AddCustomizedAuth(Configuration);
+
+            // ----- AutoMapper -----
+            services.AddAutoMapperSetup();
 
             // Adding MediatR for Domain Events and Notifications
             services.AddMediatR(typeof(Startup));
