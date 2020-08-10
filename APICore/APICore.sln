@@ -31,6 +31,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APICore.Application", "Application\APICore.Application\APICore.Application.csproj", "{DD308852-EFDB-499E-AE6B-A8BCE64B94D4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrate", "Migrate", "{2946EC82-8127-4FB1-A7B0-176E31F2BDAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APICore.Infrastructure.Mongo.Migrate", "APICore.Infrastructure.Mongo.Migrate\APICore.Infrastructure.Mongo.Migrate.csproj", "{ED3D87F6-2D85-4E8A-B00A-E49FE586A1D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +77,10 @@ Global
 		{DD308852-EFDB-499E-AE6B-A8BCE64B94D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD308852-EFDB-499E-AE6B-A8BCE64B94D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD308852-EFDB-499E-AE6B-A8BCE64B94D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED3D87F6-2D85-4E8A-B00A-E49FE586A1D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3D87F6-2D85-4E8A-B00A-E49FE586A1D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED3D87F6-2D85-4E8A-B00A-E49FE586A1D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED3D87F6-2D85-4E8A-B00A-E49FE586A1D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +96,8 @@ Global
 		{11ACE118-ABDD-4A49-8872-EAAD4804F723} = {FB02E177-3179-4714-A49B-8BF0AF8C3369}
 		{1E3B9A3B-BD01-4631-B777-F47B68E969C9} = {FB02E177-3179-4714-A49B-8BF0AF8C3369}
 		{DD308852-EFDB-499E-AE6B-A8BCE64B94D4} = {B4D85FD7-5B49-43F4-820E-B8683ADE14D0}
+		{2946EC82-8127-4FB1-A7B0-176E31F2BDAD} = {EF1F7758-FBF8-48CE-9E34-1AE83CEC644E}
+		{ED3D87F6-2D85-4E8A-B00A-E49FE586A1D7} = {2946EC82-8127-4FB1-A7B0-176E31F2BDAD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F982552C-F448-496F-8A04-3EA67B83290E}
