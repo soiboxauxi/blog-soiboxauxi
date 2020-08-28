@@ -2,3 +2,4 @@
 - React Hot Loader
 - node-sass
 - formik
+- @reduxjs/toolkit
