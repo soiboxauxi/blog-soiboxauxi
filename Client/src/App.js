@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Suspense } from 'react';
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import './App.css';
+import NotFound from './components/NotFound';
+import Login from './features/Login';
+import { hot } from 'react-hot-loader/root';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Suspense fallback={<div>Loading...</div>}>
+        <BrowserRouter>
+          <Switch>
+            <Redirect exact from="/" to="/"></Redirect>
+            <Route path="/login" component={Login}></Route>
+            <Route component={NotFound} />
+          </Switch>
+        </BrowserRouter>
+      </Suspense>
     </div>
   );
 }
 
-export default App;
+export default hot(App);
