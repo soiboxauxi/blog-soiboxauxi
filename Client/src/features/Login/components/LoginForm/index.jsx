@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { FastField, Form, Formik } from "formik";
 import InputField from "custom-fields/InputField";
 import CheckboxField from "custom-fields/CheckboxField";
+import * as Yup from "yup";
 
 LoginForm.propTypes = {
   onSubmit: PropTypes.func,
@@ -15,8 +16,19 @@ LoginForm.defaultProps = {
 function LoginForm(props) {
   const { initialValues } = props;
 
+  const validationSchema = Yup.object().shape({
+    inputEmailAddress: Yup.string()
+      .email("Field must be a valid email")
+      .required("This field is required."),
+    inputPassword: Yup.string().required("This field is required."),
+  });
+
   return (
-    <Formik initialValues={initialValues} onSubmit={props.onSubmit}>
+    <Formik
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+      onSubmit={props.onSubmit}
+    >
       {(formikProps) => {
         return (
           <Form>

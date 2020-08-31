@@ -10,14 +10,13 @@ CheckboxField.propTypes = {
 CheckboxField.defaultProps = {
   type: "",
   label: "",
-  placeholder: "",
   disabled: false,
+  value: false,
 };
 
 function CheckboxField(props) {
   const { field, type, label, disabled } = props;
-  const { name } = field;
-
+  const { name, value } = field;
   return (
     <FormGroup>
       <div className="custom-control custom-checkbox">
@@ -25,6 +24,7 @@ function CheckboxField(props) {
           className="custom-control-input"
           id={name}
           {...field}
+          checked={value}
           type={type}
           disabled={disabled}
         />

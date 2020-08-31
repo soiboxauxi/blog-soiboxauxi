@@ -5,7 +5,16 @@ import LoginForm from "features/Login/components/LoginForm";
 index.propTypes = {};
 
 function index(props) {
-  //const initialValues = { email: "abc@example.com" };
+  const initialValues = {
+    inputEmailAddress: "",
+    inputPassword: "",
+    rememberPasswordCheck: true,
+  };
+
+  const handleSubmit = (values) => {
+    console.log("Login ", values);
+  };
+
   return (
     <div className="bg-primary">
       <div id="layoutAuthentication">
@@ -21,7 +30,10 @@ function index(props) {
                       </h3>
                     </div>
                     <div className="card-body">
-                      <LoginForm />
+                      <LoginForm
+                        initialValues={initialValues}
+                        onSubmit={handleSubmit}
+                      />
                     </div>
                     <div className="card-footer text-center">
                       <div className="small">
