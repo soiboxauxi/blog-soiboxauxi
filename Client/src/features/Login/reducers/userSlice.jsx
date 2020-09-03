@@ -11,13 +11,11 @@ const userSlice = createSlice({
     },
 
     login: (state, action) => {
-      console.log(action.payload);
-      const { username, password } = action.payload;
+      const { inputEmailAddress, inputPassword } = action.payload;
 
       //Check username ???
       //dispatch(request({ username }));
-      console.log(action.payload);
-      userService.login(username, password).then(
+      userService.login(inputEmailAddress, inputPassword).then(
         (user) => {
           //dispatch(success(user));
           //history.push("/");
