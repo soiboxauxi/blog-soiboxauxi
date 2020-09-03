@@ -1,18 +1,27 @@
-import React from "react";
-import "./style.scss";
 import LoginForm from "features/Login/components/LoginForm";
+import { login } from "features/Login/reducers/userSlice";
+import React from "react";
+import { useDispatch } from "react-redux";
+import "./style.scss";
 
-index.propTypes = {};
+Main.propTypes = {};
 
-function index(props) {
+function Main({ props }) {
   const initialValues = {
     inputEmailAddress: "",
     inputPassword: "",
-    rememberPasswordCheck: true,
+    rememberPasswordCheck: false,
   };
 
+  const dispatch = useDispatch();
+
   const handleSubmit = (values) => {
-    console.log("Login ", values);
+    const { inputEmailAddress, inputPassword } = values;
+    if (inputEmailAddress && inputPassword) {
+      console.log("Login ", values);
+      const action = login(values);
+      dispatch(action);
+    }
   };
 
   return (
@@ -76,4 +85,4 @@ function index(props) {
   );
 }
 
-export default index;
+export default Main;
