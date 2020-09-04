@@ -1,4 +1,4 @@
-import store from "app/store";
+import store from "./app/store.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';

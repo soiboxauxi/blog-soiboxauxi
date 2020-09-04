@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { userService } from "services/user";
+import { userService } from "../../../services/user/index.jsx";
 
 const userSlice = createSlice({
   name: "user",

@@ -1,5 +1,5 @@
-import LoginForm from "features/Login/components/LoginForm";
-import { login } from "features/Login/reducers/userSlice";
+import LoginForm from "../../../../features/Login/components/LoginForm/index.jsx";
+import { login } from "../../../../features/Login/reducers/userSlice.jsx";
 import React from "react";
 import { useDispatch } from "react-redux";
 import "./style.scss";

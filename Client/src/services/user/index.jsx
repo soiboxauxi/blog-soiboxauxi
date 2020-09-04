@@ -1,14 +1,15 @@
-const login = (username, password) => {
+const login = (email, password) => {
+  const rememberMe = true;
   const requestOptions = {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ username, password }),
+    body: JSON.stringify({ email, password, rememberMe }),
   };
-  return fetch(`/users/authenticate`, requestOptions)
+  return fetch(`https://localhost:44339/api/Account/login`, requestOptions)
     .then(handleResponse)
     .then((user) => {
       // store user details and jwt token in local storage to keep user logged in between page refreshes
-      //localStorage.setItem("user", JSON.stringify(user));
+      localStorage.setItem("user", JSON.stringify(user));
       console.log(user);
       return user;
     });

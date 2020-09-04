@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FastField, Form, Formik } from "formik";
-import InputField from "custom-fields/InputField";
-import CheckboxField from "custom-fields/CheckboxField";
+import InputField from "../../../../custom-fields/InputField/index.jsx";
+import CheckboxField from "../../../../custom-fields/CheckboxField/index.jsx";
 import * as Yup from "yup";
 
 LoginForm.propTypes = {
