@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react';
+import { hot } from 'react-hot-loader/root';
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import './App.css';
-import NotFound from './components/NotFound';
-import Login from './features/Login';
-import { hot } from 'react-hot-loader/root';
+import NotFound from './components/NotFound/index.jsx';
+import Login from './features/Login/index.jsx';
 
 function App() {
   return (

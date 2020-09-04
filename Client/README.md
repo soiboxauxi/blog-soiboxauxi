@@ -3,3 +3,4 @@
 - node-sass
 - formik
 - @reduxjs/toolkit
+- Yup

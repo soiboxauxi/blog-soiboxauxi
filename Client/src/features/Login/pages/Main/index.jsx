@@ -1,11 +1,29 @@
+import LoginForm from "../../../../features/Login/components/LoginForm/index.jsx";
+import { login } from "../../../../features/Login/reducers/userSlice.jsx";
 import React from "react";
+import { useDispatch } from "react-redux";
 import "./style.scss";
-import LoginForm from "features/Login/components/LoginForm";
 
-index.propTypes = {};
+Main.propTypes = {};
 
-function index(props) {
-  //const initialValues = { email: "abc@example.com" };
+function Main({ props }) {
+  const initialValues = {
+    inputEmailAddress: "",
+    inputPassword: "",
+    rememberPasswordCheck: false,
+  };
+
+  const dispatch = useDispatch();
+
+  const handleSubmit = (values) => {
+    const { inputEmailAddress, inputPassword } = values;
+    if (inputEmailAddress && inputPassword) {
+      console.log("Login ", values);
+      const action = login(values);
+      dispatch(action);
+    }
+  };
+
   return (
     <div className="bg-primary">
       <div id="layoutAuthentication">
@@ -21,7 +39,10 @@ function index(props) {
                       </h3>
                     </div>
                     <div className="card-body">
-                      <LoginForm />
+                      <LoginForm
+                        initialValues={initialValues}
+                        onSubmit={handleSubmit}
+                      />
                     </div>
                     <div className="card-footer text-center">
                       <div className="small">
@@ -64,4 +85,4 @@ function index(props) {
   );
 }
 
-export default index;
+export default Main;

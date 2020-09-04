@@ -1,17 +1,15 @@
 import React from "react";
 import { Switch, useRouteMatch, Route } from "react-router-dom";
-import NotFound from "components/NotFound";
-import MainPage from "./pages/Main";
+import NotFound from "../../components/NotFound/index.jsx";
+import Main from "./pages/Main/index.jsx";
 
 Login.propTypes = {};
 
 function Login(props) {
   const match = useRouteMatch();
-
   return (
     <Switch>
-      <Route exact path={match.url} component={MainPage}></Route>
-      <Route path={`${match.url}/login`} component={Login} />
+      <Route exact path={match.url} component={Main}></Route>
       <Route component={NotFound} />
     </Switch>
   );
