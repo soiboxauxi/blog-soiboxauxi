@@ -1,3 +1,5 @@
+const APP_API = process.env.REACT_APP_API_ENDPOINT;
+
 const login = (email, password) => {
   const rememberMe = true;
   const requestOptions = {
@@ -5,13 +7,13 @@ const login = (email, password) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email, password, rememberMe }),
   };
-  return fetch(`https://localhost:44339/api/Account/login`, requestOptions)
+  return fetch(APP_API + `/Account/login`, requestOptions)
     .then(handleResponse)
-    .then((user) => {
+    .then((data) => {
       // store user details and jwt token in local storage to keep user logged in between page refreshes
-      localStorage.setItem("user", JSON.stringify(user));
-      console.log(user);
-      return user;
+      localStorage.setItem("user", JSON.stringify(data));
+      console.log(data);
+      return data;
     });
 };
 
