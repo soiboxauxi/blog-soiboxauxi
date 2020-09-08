@@ -3,8 +3,7 @@ import { login } from "../../../../features/Login/reducers/userSlice.jsx";
 import React from "react";
 import { useDispatch } from "react-redux";
 import "./style.scss";
-
-Main.propTypes = {};
+import { userService } from "../../../../services/user/index.jsx";
 
 function Main({ props }) {
   const initialValues = {
@@ -15,13 +14,35 @@ function Main({ props }) {
 
   const dispatch = useDispatch();
 
-  const handleSubmit = (values) => {
+  const userLogin = async (values) => {
     const { inputEmailAddress, inputPassword } = values;
     if (inputEmailAddress && inputPassword) {
-      console.log("Login ", values);
-      const action = login(values);
-      dispatch(action);
+      //Check username ???
+      //dispatch(request({ username }));
+      userService.login(inputEmailAddress, inputPassword).then(
+        (data) => {
+          //success(state, user);
+          //history.push("/dashboard");
+          console.log("Login thành công");
+        },
+        (error) => {
+          //dispatch(failure(error));
+          //dispatch(alertActions.error(error));
+          console.log("Login thất bại");
+        },
+      );
     }
+  };
+
+  const handleSubmit = (values) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        userLogin(values);
+        const action = login(values);
+        dispatch(action);
+        resolve(true);
+      }, 2000);
+    });
   };
 
   return (
@@ -41,7 +62,7 @@ function Main({ props }) {
                     <div className="card-body">
                       <LoginForm
                         initialValues={initialValues}
-                        onSubmit={handleSubmit}
+                        onSubmit={(values) => handleSubmit(values)}
                       />
                     </div>
                     <div className="card-footer text-center">

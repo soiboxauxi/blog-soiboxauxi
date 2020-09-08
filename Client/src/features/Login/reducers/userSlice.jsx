@@ -1,34 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { userService } from "../../../services/user/index.jsx";
+import { userConstants } from "../../../constants/user.constants.jsx";
 
 const userSlice = createSlice({
   name: "user",
-  initialState: [],
+  initialState: { success: false, data: {} },
   reducers: {
     getAuth(state, action) {
-      const { id, text } = action.payload;
-      state.push({ id, text, completed: false });
+      // const { id, text } = action.payload;
+      // state.push({ id, text, completed: false });
     },
 
+    // success: (state, action) => {
+    //   state = { type: userConstants.LOGIN_SUCCESS, action };
+    // },
     login: (state, action) => {
-      const { inputEmailAddress, inputPassword } = action.payload;
-
-      //Check username ???
-      //dispatch(request({ username }));
-      userService.login(inputEmailAddress, inputPassword).then(
-        (user) => {
-          //dispatch(success(user));
-          //history.push("/");
-          console.log("Login thành công");
-        },
-        (error) => {
-          //dispatch(failure(error));
-          //dispatch(alertActions.error(error));
-          console.log("Login thất bại");
-        },
-      );
+      return action.payload;
     },
   },
+  extraReducers: {},
 });
-export const { getAuth, login } = userSlice.actions;
-export default userSlice.reducer;
+
+const { reducer, actions } = userSlice;
+export const { login } = actions;
+export default reducer;
