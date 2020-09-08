@@ -1,9 +1,15 @@
-import LoginForm from "../../../../features/Login/components/LoginForm/index.jsx";
-import { login } from "../../../../features/Login/reducers/userSlice.jsx";
 import React from "react";
 import { useDispatch } from "react-redux";
-import "./style.scss";
+import { useHistory } from "react-router-dom";
+import LoginForm from "../../../../features/Login/components/LoginForm/index.jsx";
+import {
+  failure,
+  login,
+  request,
+  success,
+} from "../../../../features/Login/reducers/userSlice.jsx";
 import { userService } from "../../../../services/user/index.jsx";
+import "./style.scss";
 
 function Main({ props }) {
   const initialValues = {
@@ -13,20 +19,20 @@ function Main({ props }) {
   };
 
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const userLogin = async (values) => {
     const { inputEmailAddress, inputPassword } = values;
     if (inputEmailAddress && inputPassword) {
-      //Check username ???
-      //dispatch(request({ username }));
+      dispatch(request({ inputEmailAddress }));
       userService.login(inputEmailAddress, inputPassword).then(
         (data) => {
-          //success(state, user);
-          //history.push("/dashboard");
+          dispatch(success(inputEmailAddress));
+          history.push("/dashboard");
           console.log("Login thành công");
         },
         (error) => {
-          //dispatch(failure(error));
+          dispatch(failure(error));
           //dispatch(alertActions.error(error));
           console.log("Login thất bại");
         },

@@ -5,21 +5,22 @@ const userSlice = createSlice({
   name: "user",
   initialState: { success: false, data: {} },
   reducers: {
-    getAuth(state, action) {
-      // const { id, text } = action.payload;
-      // state.push({ id, text, completed: false });
-    },
-
-    // success: (state, action) => {
-    //   state = { type: userConstants.LOGIN_SUCCESS, action };
-    // },
     login: (state, action) => {
       return action.payload;
+    },
+    request: (state, action) => {
+      return { type: userConstants.LOGIN_REQUEST, user: action.payload };
+    },
+    success: (state, action) => {
+      return { type: userConstants.LOGIN_SUCCESS, user: action.payload };
+    },
+    failure: (state, action) => {
+      return { type: userConstants.LOGIN_FAILURE, error: action.payload };
     },
   },
   extraReducers: {},
 });
 
 const { reducer, actions } = userSlice;
-export const { login } = actions;
+export const { login, request, success, failure } = actions;
 export default reducer;

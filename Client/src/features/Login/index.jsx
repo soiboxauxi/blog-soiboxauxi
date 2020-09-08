@@ -3,9 +3,7 @@ import { Switch, useRouteMatch, Route } from "react-router-dom";
 import NotFound from "../../components/NotFound/index.jsx";
 import Main from "./pages/Main/index.jsx";
 
-Login.propTypes = {};
-
-function Login(props) {
+function Login() {
   const match = useRouteMatch();
   return (
     <Switch>
