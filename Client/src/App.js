@@ -3,8 +3,9 @@ import { hot } from 'react-hot-loader/root';
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import './App.css';
 import NotFound from './components/NotFound/index.jsx';
-import Login from './features/Login/index.jsx';
+import PrivateRoute from './components/PrivateRoute/index.jsx';
 import Dashboard from './features/Dashboard/index.jsx';
+import Login from './features/Login/index.jsx';
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
         <BrowserRouter>
           <Switch>
             <Redirect exact from="/" to="/"></Redirect>
-            <Route path="/dashboard" component={Dashboard}></Route>
-            <Route path="/login" component={Login}></Route>
+            <PrivateRoute path="/dashboard" component={Dashboard} />
+            <Route path="/login" component={Login} />
             <Route component={NotFound} />
           </Switch>
         </BrowserRouter>
