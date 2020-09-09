@@ -1,6 +1,6 @@
 const APP_API = process.env.REACT_APP_API_ENDPOINT;
 
-const login = (email, password) => {
+const login = async (email, password) => {
   const rememberMe = true;
   const requestOptions = {
     method: "POST",
@@ -17,7 +17,20 @@ const login = (email, password) => {
     });
 };
 
-function handleResponse(response) {
+const logout = () => {
+  // remove user from local storage to log user out
+  localStorage.removeItem("data");
+};
+
+const getAll = () => {
+  //const requestOptions = {
+  //  method: "GET",
+  //  headers: authHeader(),
+  //};
+  //return fetch(`${config.apiUrl}/users`, requestOptions).then(handleResponse);
+};
+
+const handleResponse = (response) => {
   return response.text().then((text) => {
     const data = text && JSON.parse(text);
     if (!response.ok) {
@@ -33,8 +46,10 @@ function handleResponse(response) {
 
     return data;
   });
-}
+};
 
 export const userService = {
   login,
+  logout,
+  getAll,
 };

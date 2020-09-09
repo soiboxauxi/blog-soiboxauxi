@@ -1,5 +1,5 @@
-import React from "react";
-import { useDispatch } from "react-redux";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import LoginForm from "../../../../features/Login/components/LoginForm/index.jsx";
 import {
@@ -17,6 +17,9 @@ function Main({ props }) {
     inputPassword: "",
     rememberPasswordCheck: false,
   };
+
+  // reset login status
+  userService.logout();
 
   const dispatch = useDispatch();
   const history = useHistory();

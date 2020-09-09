@@ -17,10 +17,12 @@ const userSlice = createSlice({
     failure: (state, action) => {
       return { type: userConstants.LOGIN_FAILURE, error: action.payload };
     },
+    logout: (state, action) => {},
+    getAll: (state, action) => {},
   },
   extraReducers: {},
 });
 
 const { reducer, actions } = userSlice;
-export const { login, request, success, failure } = actions;
+export const { login, request, success, failure, logout, getAll } = actions;
 export default reducer;
