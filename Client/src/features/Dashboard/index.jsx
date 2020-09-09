@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-index.propTypes = {};
+Dashboard.propTypes = {};
 
-function index(props) {
-  //const data = useSelector((state) => state.data);
-  //const user = useSelector((state) => state.user);
-
+function Dashboard(props) {
+  const data = useSelector((state) => state.data);
+  const authentication = useSelector((state) => state.authentication);
+  console.log(data);
+  console.log(authentication);
   return (
     <div className="col-md-6 col-md-offset-3">
       <h1>Hi Admin!</h1>
@@ -21,4 +22,4 @@ function index(props) {
   );
 }
 
-export default index;
+export default Dashboard;

@@ -1,14 +1,16 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
-import LoginForm from "../../../../features/Login/components/LoginForm/index.jsx";
+import { userConstants } from "../../../../constants/user.constants";
+import LoginForm from "../../../../features/Login/components/LoginForm/index";
+import { authentication } from "../../../../features/Login/reducers/authenticationSlice";
 import {
   failure,
   login,
   request,
   success,
-} from "../../../../features/Login/reducers/userSlice.jsx";
-import { userService } from "../../../../services/user/index.jsx";
+} from "../../../../features/Login/reducers/userSlice";
+import { userService } from "../../../../services/user/index";
 import "./style.scss";
 
 function Main({ props }) {
@@ -31,11 +33,13 @@ function Main({ props }) {
       userService.login(inputEmailAddress, inputPassword).then(
         (data) => {
           dispatch(success(inputEmailAddress));
+          dispatch(authentication(userConstants.LOGIN_SUCCESS));
           history.push("/dashboard");
           console.log("Login thành công");
         },
         (error) => {
           dispatch(failure(error));
+          dispatch(authentication(userConstants.LOGIN_FAILURE));
           //dispatch(alertActions.error(error));
           console.log("Login thất bại");
         },

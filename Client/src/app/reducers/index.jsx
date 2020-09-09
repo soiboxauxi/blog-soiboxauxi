@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
-import userReducer from "../../features/Login/reducers/userSlice.jsx";
-//import visibilityFilterReducer from "features/filters/filtersSlice";
+import authenticationReducer from "../../features/Login/reducers/authenticationSlice";
+import userReducer from "../../features/Login/reducers/userSlice";
 
 const rootReducer = combineReducers({
   user: userReducer,
-  //visibilityFilter: visibilityFilterReducer,
+  authentication: authenticationReducer,
 });
 
 export default rootReducer;

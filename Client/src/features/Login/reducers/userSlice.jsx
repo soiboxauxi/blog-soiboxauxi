@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { userConstants } from "../../../constants/user.constants.jsx";
+import { userConstants } from "../../../constants/user.constants";
 
 const userSlice = createSlice({
   name: "user",
@@ -17,12 +17,10 @@ const userSlice = createSlice({
     failure: (state, action) => {
       return { type: userConstants.LOGIN_FAILURE, error: action.payload };
     },
-    logout: (state, action) => {},
-    getAll: (state, action) => {},
   },
   extraReducers: {},
 });
 
 const { reducer, actions } = userSlice;
-export const { login, request, success, failure, logout, getAll } = actions;
+export const { login, request, success, failure } = actions;
 export default reducer;
