@@ -17,6 +17,7 @@ function Dashboard(props) {
 
       <p>
         <Link to="/login">Logout</Link>
+        <Link to="/">Home</Link>
       </p>
     </div>
   );

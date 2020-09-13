@@ -34,8 +34,12 @@ function Login() {
       userService.login(inputEmailAddress, inputPassword).then(
         (res) => {
           dispatch(success(inputEmailAddress));
-          dispatch(authentication(userConstants.LOGIN_SUCCESS));
-          console.log(res);
+          dispatch(
+            authentication({
+              statelogin: userConstants.LOGIN_SUCCESS,
+              data: res,
+            }),
+          );
           history.push("/dashboard");
           console.log("Login thành công");
         },

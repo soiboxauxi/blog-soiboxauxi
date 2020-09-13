@@ -16,8 +16,8 @@ const login = async (email, password) => {
       // store user details and jwt token in local storage to keep user logged in between page refreshes
       localStorage.setItem("data", JSON.stringify(data));
 
-      const expires = new Date();
-      expires.setDate(Date.now() + 1000 * 60 * 60 * 24 * 14);
+      // const expires = new Date();
+      // expires.setDate(Date.now() + 1000 * 60 * 60 * 24 * 14);
 
       var decode;
       if (success) {
@@ -28,8 +28,8 @@ const login = async (email, password) => {
       //  // do something
       //}
       return {
-        token: data.accessToken,
-        expiresIn: decode.exp,
+        authToken: data.accessToken,
+        expriedAt: decode.exp,
         authUserState: { success: true },
       };
     });

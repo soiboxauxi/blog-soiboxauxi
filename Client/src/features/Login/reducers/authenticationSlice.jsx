@@ -6,19 +6,22 @@ const initialStatex = user ? { loggedIn: false, user } : {};
 
 const authenticationSlice = createSlice({
   name: "authentication",
-  initialState: initialStatex,
+  initialState: {},
   reducers: {
     authentication: (state, action) => {
-      switch (action.payload) {
+      const { statelogin, data } = action.payload;
+      switch (statelogin) {
         case userConstants.LOGIN_REQUEST:
           return {
             loggingIn: true,
             user: action.user,
           };
         case userConstants.LOGIN_SUCCESS:
+          const { authToken, expriedAt } = data;
           return {
             loggedIn: true,
-            user: action.user,
+            authToken: authToken,
+            expriedAt: expriedAt,
           };
         case userConstants.LOGIN_FAILURE:
           return {};

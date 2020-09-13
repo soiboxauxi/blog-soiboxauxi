@@ -4,6 +4,7 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import './App.css';
 import PrivateRoute from "./components/PrivateRoute/index";
 import Dashboard from './features/Dashboard/index';
+import Home from './features/Home/index';
 import Login from './features/Login/index';
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <BrowserRouter>
           <Switch>
-            <Redirect exact from="/" to="/"></Redirect>
-            <Route component={Login} path={'/login'} exact />
+            <Route exact component={Home} path={'/'} />
+            <Route component={Login} path={'/login'} />
             <PrivateRoute component={Dashboard} path={'/dashboard'} loginPath={'/login'} exact />
           </Switch>
         </BrowserRouter>
