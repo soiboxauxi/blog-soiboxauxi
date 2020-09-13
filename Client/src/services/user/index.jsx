@@ -1,3 +1,5 @@
+import jwt from "jsonwebtoken";
+
 const APP_API = process.env.REACT_APP_API_ENDPOINT;
 
 const login = async (email, password) => {
@@ -9,10 +11,27 @@ const login = async (email, password) => {
   };
   return fetch(APP_API + `/Account/login`, requestOptions)
     .then(handleResponse)
-    .then((data) => {
+    .then((response) => {
+      const { success, data } = response;
       // store user details and jwt token in local storage to keep user logged in between page refreshes
       localStorage.setItem("data", JSON.stringify(data));
-      return data;
+
+      const expires = new Date();
+      expires.setDate(Date.now() + 1000 * 60 * 60 * 24 * 14);
+
+      var decode;
+      if (success) {
+        decode = jwt.decode(data.accessToken);
+      }
+      // Trường hợp cần Date
+      //if (jwt.exp < Date.now() / 1000) {
+      //  // do something
+      //}
+      return {
+        token: data.accessToken,
+        expiresIn: decode.exp,
+        authUserState: { success: true },
+      };
     });
 };
 

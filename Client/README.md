@@ -4,3 +4,6 @@
 - formik
 - @reduxjs/toolkit
 - Yup
+- react-cookies
+- jwt-auth-react
+- jsonwebtoken

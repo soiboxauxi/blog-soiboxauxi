@@ -2,10 +2,9 @@ import React, { Suspense } from 'react';
 import { hot } from 'react-hot-loader/root';
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import './App.css';
-import NotFound from './components/NotFound/index.jsx';
-import PrivateRoute from './components/PrivateRoute/index.jsx';
-import Dashboard from './features/Dashboard/index.jsx';
-import Login from './features/Login/index.jsx';
+import PrivateRoute from "./components/PrivateRoute/index";
+import Dashboard from './features/Dashboard/index';
+import Login from './features/Login/index';
 
 function App() {
   return (
@@ -14,9 +13,8 @@ function App() {
         <BrowserRouter>
           <Switch>
             <Redirect exact from="/" to="/"></Redirect>
-            <PrivateRoute path="/dashboard" component={Dashboard} />
-            <Route path="/login" component={Login} />
-            <Route component={NotFound} />
+            <Route component={Login} path={'/login'} exact />
+            <PrivateRoute component={Dashboard} path={'/dashboard'} loginPath={'/login'} exact />
           </Switch>
         </BrowserRouter>
       </Suspense>
