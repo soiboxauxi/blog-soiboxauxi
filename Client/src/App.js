@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { hot } from 'react-hot-loader/root';
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 import PrivateRoute from "./components/PrivateRoute/index";
 import Dashboard from './features/Dashboard/index';

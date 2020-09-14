@@ -30,17 +30,14 @@ const login = async (email, password) => {
       //  // do something
       //}
 
-      const expires = new Date();
-      expires.setDate(Date.now() + 1000 * 60 * 60 * 24 * 14);
       cookies.set("authToken", data.accessToken, {
         path: "/",
-        expires,
+        expires: new Date(decode.exp),
         maxAge: 1000,
         //domain: "https://play.bukinoshita.io",
         //secure: true,
         //httpOnly: true,
       });
-      console.log(cookies.get("authToken"));
       return {
         authToken: data.accessToken,
         expriedAt: decode.exp,
