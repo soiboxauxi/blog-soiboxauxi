@@ -1,9 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { userConstants } from "../../../constants/user.constants";
 
-let user = JSON.parse(localStorage.getItem("user"));
-const initialStatex = user ? { loggedIn: false, user } : {};
-
 const authenticationSlice = createSlice({
   name: "authentication",
   initialState: {},

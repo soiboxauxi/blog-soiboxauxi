@@ -1,8 +1,10 @@
 import jwt from "jsonwebtoken";
+import Cookies from "universal-cookie";
 
 const APP_API = process.env.REACT_APP_API_ENDPOINT;
 
 const login = async (email, password) => {
+  const cookies = new Cookies();
   const rememberMe = true;
   const requestOptions = {
     method: "POST",
@@ -27,6 +29,18 @@ const login = async (email, password) => {
       //if (jwt.exp < Date.now() / 1000) {
       //  // do something
       //}
+
+      const expires = new Date();
+      expires.setDate(Date.now() + 1000 * 60 * 60 * 24 * 14);
+      cookies.set("authToken", data.accessToken, {
+        path: "/",
+        expires,
+        maxAge: 1000,
+        //domain: "https://play.bukinoshita.io",
+        //secure: true,
+        //httpOnly: true,
+      });
+      console.log(cookies.get("authToken"));
       return {
         authToken: data.accessToken,
         expriedAt: decode.exp,
