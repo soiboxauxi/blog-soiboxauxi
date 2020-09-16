@@ -21,10 +21,6 @@ namespace APICore.StartupExtensions
         {
             var secretKey = configuration.GetSection("SecretKey").Value;
             var _signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
-
-            //services.AddIdentity<ApplicationUser, IdentityRole>()
-            //    .AddRoles<IdentityRole>()
-            //    .AddDefaultTokenProviders();
             
             var jwtAppSettingOptions = configuration.GetSection(nameof(JwtIssuerOptions));
 
