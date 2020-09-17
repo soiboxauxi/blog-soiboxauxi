@@ -19,6 +19,7 @@ namespace APICore.StartupExtensions
     {
         public static IServiceCollection AddCustomizedAuth(this IServiceCollection services, IConfiguration configuration)
         {
+            // get secretKey
             var secretKey = configuration.GetSection("SecretKey").Value;
             var _signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
             
