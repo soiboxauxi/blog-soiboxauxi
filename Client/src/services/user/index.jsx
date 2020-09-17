@@ -1,10 +1,11 @@
 import jwt from "jsonwebtoken";
 import Cookies from "universal-cookie";
+import axios from "axios";
 
 const APP_API = process.env.REACT_APP_API_ENDPOINT;
+const cookies = new Cookies();
 
 const login = async (email, password) => {
-  const cookies = new Cookies();
   const rememberMe = true;
   const requestOptions = {
     method: "POST",
@@ -51,14 +52,6 @@ const logout = () => {
   localStorage.removeItem("data");
 };
 
-const getAll = () => {
-  //const requestOptions = {
-  //  method: "GET",
-  //  headers: authHeader(),
-  //};
-  //return fetch(`${config.apiUrl}/users`, requestOptions).then(handleResponse);
-};
-
 const handleResponse = (response) => {
   return response.text().then((text) => {
     const data = text && JSON.parse(text);
@@ -75,6 +68,14 @@ const handleResponse = (response) => {
 
     return data;
   });
+};
+
+const getAll = () => {
+  //const requestOptions = {
+  //  method: "GET",
+  //  headers: authHeader(),
+  //};
+  //return fetch(`${config.apiUrl}/users`, requestOptions).then(handleResponse);
 };
 
 export const userService = {

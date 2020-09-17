@@ -1,14 +1,15 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { Redirect, Route } from "react-router-dom";
+import { authService } from "../../services/auth/index";
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
-  const authState = useSelector((state) => state.authentication);
+  const authToken = authService.getAuthToken();
+
   const isAuth = () => {
-    console.log(authState);
-    // check token
-    if (authState.authToken && authState.expriedAt) {
-      if (authState.expriedAt > Date.now() / 1000) {
+    // Check token
+    if (authToken) {
+      const authExpriedAt = authService.getAuthExpried(authToken);
+      if (authExpriedAt > Date.now() / 1000) {
         return true;
       }
     } else {

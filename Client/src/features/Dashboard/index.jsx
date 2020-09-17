@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { Button } from "reactstrap";
+import { authService } from "../../services/auth/index";
 
 Dashboard.propTypes = {};
 
 function Dashboard(props) {
-  const data = useSelector((state) => state.data);
-  const authentication = useSelector((state) => state.authentication);
-  console.log(data);
-  console.log(authentication);
+  const handleButtonClick = () => {
+    authService.logout();
+  };
+
   return (
     <div className="col-md-6 col-md-offset-3">
       <h1>Hi Admin!</h1>
@@ -16,7 +17,7 @@ function Dashboard(props) {
       <h3>Users from secure api end point:</h3>
 
       <p>
-        <Link to="/login">Logout</Link>
+        <Button onClick={handleButtonClick}>Logout</Button>
         <Link to="/">Home</Link>
       </p>
     </div>
