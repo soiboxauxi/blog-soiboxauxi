@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import Cookies from "universal-cookie";
-import axios from "axios";
+import axiosClient from "../../services/axios";
 
 const APP_API = process.env.REACT_APP_API_ENDPOINT;
 const cookies = new Cookies();
@@ -71,11 +71,8 @@ const handleResponse = (response) => {
 };
 
 const getAll = () => {
-  //const requestOptions = {
-  //  method: "GET",
-  //  headers: authHeader(),
-  //};
-  //return fetch(`${config.apiUrl}/users`, requestOptions).then(handleResponse);
+  const url = APP_API + "/User";
+  return axiosClient.get(url);
 };
 
 export const userService = {

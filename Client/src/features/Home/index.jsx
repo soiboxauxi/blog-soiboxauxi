@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { authService } from "../../services/auth/index";
 import { userService } from "../../services/user/index";
@@ -6,8 +6,22 @@ import { userService } from "../../services/user/index";
 Home.propTypes = {};
 
 function Home(props) {
-  const data_fecth = userService.getAll();
-  console.log(data_fecth);
+  const [dataFecth, setdataFecth] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        userService.getAll().then((res) => {
+          setdataFecth(res);
+        });
+
+        //setProductList(response.data);
+      } catch (error) {
+        console.log("Failed to fetch list: ", error);
+      }
+    };
+    fetchData();
+  }, [dataFecth]);
 
   useEffect(() => {
     const unregisterAuthObserver = async () => {
@@ -28,7 +42,7 @@ function Home(props) {
       <Link to="/dashboard">dashboard</Link>
       <Link to="/login">Login</Link>
 
-      <p>{data_fecth}</p>
+      <p>{JSON.stringify(dataFecth)}</p>
     </div>
   );
 }

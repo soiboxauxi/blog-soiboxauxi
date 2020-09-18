@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { authService } from "../services/auth/index"
 
 // Set up default config for http requests here
 // Please have a look at here `https://github.com/axios/axios#request- config` for the full list of configs
@@ -11,10 +12,10 @@ const axiosClient = axios.create({
 });
 
 axiosClient.interceptors.request.use(async (config) => {
-    //const token = await getFirebaseToken();
-    //if (token) {
-    //    config.headers.Authorization = `Bearer ${token}`;
-    //}
+    const token = authService.getAuthToken();
+    if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+    }
 
     return config;
 });
