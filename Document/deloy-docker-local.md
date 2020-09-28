@@ -4,9 +4,9 @@
 - docker build -t apicore -f .\APICore\Dockerfile .
 - docker run --rm -it -p 8080:80 -p 8081:443
   -e ASPNETCORE_URLS="https://+;http://+" -e ASPNETCORE_HTTPS_PORT=8081
-  -e ASPNETCORE_Kestrel**Certificates**Default**Password="{ password } "
-  -e ASPNETCORE_Kestrel**Certificates**Default**Path=/https/aspnetapp.pfx
-  -v \$ENV:USERPROFILE\.aspnet\https:/https/ apicore
+  -e ASPNETCORE_Kestrel__Certificates__Default__Password="{ password } "
+  -e ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+  -v \$ENV:USERPROFILE\\.aspnet\https:/https/ apicore
 
 > %USERPROFILE% => \$ENV:USERPROFILE (Powershell)
 
