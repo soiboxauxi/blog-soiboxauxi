@@ -9,3 +9,9 @@
   -v \$ENV:USERPROFILE\.aspnet\https:/https/ apicore
 
 > %USERPROFILE% => \$ENV:USERPROFILE (Powershell)
+
+| Lệnh | Giải thích                               |
+| ---- | ---------------------------------------- |
+| rm   | remove container                         |
+| it   | khởi động (item tag) {image_id/name:tag} |
+| name | {container_name}                         |
